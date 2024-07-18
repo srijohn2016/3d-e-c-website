@@ -21,7 +21,6 @@ header{
   position:relative;
   padding-top:130px;
  }
-
 .navbar-brand{
     /* color: rgba(243, 104, 11, 0.856); */
     background: linear-gradient(gold , red,blue);
@@ -35,13 +34,13 @@ header{
     background-image: linear-gradient(red, yellow);
   } */
 
-  .navbar-nav .nav-item .nav-link:hover,
-  .navbar-nav .nav-item .nav-link.active{
+  .navbar-nav .nav-item a:hover,
+  .navbar-nav .nav-item a.active{
      color:black;
   }
 
 
-.navbar-light .navbar-nav .nav-link{
+.navbar-light .navbar-nav a{
     /* background: linear-gradient(white ,black);
     -webkit-background-clip: text;
      -webkit-text-fill-color: transparent; */
@@ -61,14 +60,14 @@ header{
     justify-content: center;
  }
  
- .navbar-nav .nav-link{
+ .navbar-nav a{
     list-style: none;
     padding:5px 10px;
     position: relative;
     left: 0 10%;  
  }
 
- .navbar-nav .nav-link{
+ .navbar-nav a{
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
@@ -76,13 +75,13 @@ header{
     transition: 0.3s ease;
 } 
 
- .nav-item .nav-link:hover,
- .nav-item .nav-link.active{
+ .nav-item a:hover,
+ .nav-item a .active{
    color:black;
 }
 
- .nav-link.active::after,
- .nav-link:hover::after{
+ a.active::after,
+ a:hover::after{
    content: " ";
    width:70%;
    height:2px;
@@ -95,12 +94,12 @@ header{
 .bg-dark{
     background-color: white !important;
 }
-.nav-link,i{
+a,i{
   padding-inline-start: 25px;
   margin:6px;
 }
 
-.nav-link .active{
+a .active{
   background: whitesmoke;
   display: inline-block;
 }
@@ -202,6 +201,29 @@ header{
     color: #000;
  }
  
+
+/* about page */
+
+.about-bg{
+  background-image: url('img/logo/abt\ img.jpg');
+  height: 100%;  
+  width: 100%;
+  object-fit: cover;
+}
+.abt-logo{
+  width: 180px;
+  height: 180px;
+  position: relative; 
+  left:50%; 
+}
+.abt-name{
+  position: relative;
+  color:rgba(247, 82, 6, 0.973);
+  left:38%;
+  padding:10px 30px;
+  border-top:10px;
+ }
+
 
 
 
